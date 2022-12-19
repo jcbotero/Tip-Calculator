@@ -1,0 +1,210 @@
+body {
+    max-width: 100vw;
+    padding: 0px;
+    margin: 0px;
+    font-family: "Mono";
+    background-color: hsl(185, 41%, 84%);
+    font-weight: 700;
+}
+
+
+@font-face {
+    font-family: "Mono";
+    src: url("./SpaceMono-Bold.ttf");
+}
+
+header {
+    text-align: center;
+    margin: 5% 0% 5% 0%;
+    color: hsl(183, 100%, 15%);
+    letter-spacing: 0.5ch;
+}
+
+main {
+    max-width: 60%;
+    margin: 5% 18%;
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+}
+
+.data {
+    color: hsl(186, 14%, 43%);
+    max-width: 50%;
+    padding: 2% 7% 5% 4%;
+    font-size: 14px;
+}
+
+.bill {
+    display: inline-block;
+    width: 100%;
+}
+
+.bill input, .people input {
+    width: 95%;
+    height: 40px;
+    text-align: end;
+    font-size: 24px;
+    background-color:  hsl(180, 6%, 94%);
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    padding-right: 3%;
+    background-image: url("images/icon-dollar.svg");
+    background-repeat: no-repeat;
+    background-position: 3%; /* con esto corro la position de la img a la derecha*/
+    border-style: none;
+    border-radius: 5x;
+    cursor: url("pointer.png"), auto;
+}
+
+
+.bill input:focus, .people input:focus, #custom:focus {
+    outline: none !important; 
+    border:2px solid hsl(172, 65%, 35%);
+} /* asi edito input o text area cuando lo estoy llenando */
+
+
+.people input {
+    background-image: url("images/icon-person.svg");
+}
+
+#text {
+     text-align: right;
+     color: rgb(207, 129, 98);
+     margin-top: -11%;
+     font-size: 16px;
+     margin-bottom: 6%;
+}
+
+.buttons {
+    padding: 7% 0%;
+}
+.buttons button, .buttons input {
+    justify-content: space-around;
+    width: 29.5%;
+    height: 40px;
+    color: white;
+    margin: 1% 0.5%;
+    font-size: 20px;
+    background-color: hsl(183, 100%, 15%);
+    border-style: none;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: url("pointer.png"), auto;
+}
+
+
+.buttons button:focus, .reset button:hover{
+    background-color: hsl(172, 69%, 66%);
+    color: hsl(183, 100%, 15%);
+} /* con focus stilizo el boton cuando es clikeado*/
+
+#custom {
+    background-color: hsl(180, 6%, 94%);
+    color: hsl(186, 14%, 43%);
+    text-align: center;
+}
+
+.data2 {
+    margin: 4% 3% 4% 0%;
+    max-width: 45%;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+    padding: 3% 0%;
+}
+
+.sum1, .sum2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* separar dos elmentos a los ancho del width*/
+    color: white;
+    font-size: 14px;
+}
+
+.tip, .tip2 {
+    padding: 4% 0% 0% 10%;
+}
+
+.tip p, .tip2 p {
+    color:  hsl(184, 14%, 56%);
+    font-weight: 100;
+    margin: 0% 0%;
+    margin-top: -17%;
+}
+
+.sum1 input, .sum2 input{
+    max-width: 35%;
+    height: 50px;
+    margin-top: 5%;
+    font-size: 38px;
+    margin: 8% 4% 0% 0%;
+    border-radius: 15px;
+    border-style: none;
+    padding-left: 4%;
+    padding-right: 5%;
+    text-align: right;
+    color:hsl(172, 67%, 45%);
+    background-color:  hsl(183, 100%, 15%);
+}
+
+.reset button {
+    margin: 30% 4% 3% 10%;
+    width: 85%;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: hsl(183, 100%, 15%);;
+    background-color: hsl(172, 67%, 45%);
+    border-style: none;
+    font-weight:600;
+    cursor: url("pointer.png"), auto;
+}
+
+@media (max-width : 600px ) {
+
+    body {
+        max-width: 375px;
+        margin: 0% 10%;
+    }
+    
+    header {
+        text-align: center;
+        margin: 8% 0% 6% 0%
+    }
+    
+    main {
+        max-width: 100%;
+        margin: 5% 0%;
+        display: inline-block;
+    }
+    
+    .data {
+        max-width: 100%;
+        padding: 4% 7% 4% 7%;
+        font-size: 14px;
+    }
+    
+
+    .buttons button, .buttons input {
+        justify-content: space-around;
+        width: 45%;
+        height: 50px;
+        margin: 3% 1%;
+        font-size: 22px;
+    }
+    
+    
+    .data2 {
+        margin: 4% 7% 4% 7%;
+        max-width: 100%;
+        background-color: hsl(183, 100%, 15%);
+        border-radius: 10px;
+        padding: 3% 0%;
+    }
+    
+    .reset button {
+        margin: 10% 7% 8% 7%;
+        width: 85%;
+    }
+
+}
